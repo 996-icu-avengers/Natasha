@@ -37,7 +37,7 @@ export default {
 
   effects: {
     *init({ }, { call, put }) {  // eslint-disable-line
-      console.log('init')
+      console.debug('init')
       yield put({ type: 'getAllCompany' });
     },
     *getAllCompany({ }, { call, put }) {  // eslint-disable-line

@@ -52,7 +52,7 @@ export function shallowDiff(oldObj, newObj) {
 
 
 if (!chrome.runtime.onMessage) { // eslint-disable-line
-  chrome.runtime.onMessage = { addListener: function() { console.log(arguments) } } // eslint-disable-line
+  chrome.runtime.onMessage = { addListener: function() { console.debug(arguments) } } // eslint-disable-line
 }
 const extensionId = chrome.runtime && chrome.runtime.id ? chrome.runtime.id : ''; // eslint-disable-line 
 const state = {}
@@ -65,7 +65,8 @@ export const store = new Store({
 export const bind = (store, dispatch) => {
   let prevState = store.getState();
   store.ready().then(() => {
-    console.log('state: ', store.getState())
+    console.debug('state: ', store.getState())
+    dispatch({ type: 'save', payload: store.getState() })
     store.subscribe(() => {
       const state = store.getState();
       const diff = shallowDiff(prevState, state);
@@ -84,7 +85,6 @@ export const action = (actionOrType, timeout) => {
     if (!action.actionId){ // 如果没有actionid就随机生成一个
       action.actionId = Math.random().toString().substr(2);
     }
-    console.log('action', action)
     const unsubscribe = store.subscribe(() => {
       const { response={type:'', actionId: ''} } = store.getState()['background'];
       if (response && `background/${response.type}` === action.type && ((response.actionId && response.actionId === action.actionId) || !response.actionId)){
@@ -146,7 +146,7 @@ export default {
 
   effects: {
     *init({ }, { call, put }) {  // eslint-disable-line
-      console.log('init')
+      console.debug('init')
       //yield put({ type: 'getTagByCompanyName', name: '58' })
     },
     *chaneShowStatus({ show=true }, { call, put }) {  // eslint-disable-line
@@ -155,7 +155,7 @@ export default {
     },
     *getTagByCompanyName({ name }, { call, put }) {  // eslint-disable-line
       const {err, status, res, req} = yield call(action, { type: 'background/getTagByCompanyName', name })
-      console.log(err, status, res, req)
+      console.debug(err, status, res, req)
       if (!err) {
         yield put({ type: 'save', payload: res });
       }
