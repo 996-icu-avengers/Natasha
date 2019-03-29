@@ -1,23 +1,4 @@
-
-// TODO 从某一个地址获取
-const getAllCompany = () => {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve({
-        code: 0,
-        msg: 'success',
-        icu996: [
-          '58',
-          // ...
-        ],
-        wlb955: [
-          'IBM',
-          'eBay'
-        ],
-      })
-    }, 100)
-  })
-}
+import { getAllCompany } from '../services/background'
 
 export default {
 
