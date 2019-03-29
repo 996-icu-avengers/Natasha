@@ -1,0 +1,9 @@
+{
+  "entry": "./src/*.js",
+  "publicPath": "/",
+  "extraBabelPlugins": [
+    ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }]
+  ],
+  "commons": [{"name": "vendor"}],
+  "ignoreMomentLocale": true
+}

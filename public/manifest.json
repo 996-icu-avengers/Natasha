@@ -1,0 +1,37 @@
+{
+  "name": "Natasha",
+  "version": "0.0.1",
+  "description": "旨在各大招聘网站标记996.ICU和955.WLB上榜公司",
+  "permissions":[
+    "browsingData",
+    "tabs",
+    "activeTab",
+    "storage",
+    "cookies",
+    "proxy",
+    "notifications",
+    "webRequest",
+    "webRequestBlocking",
+    "webNavigation",
+    "management",
+    "<all_urls>"
+  ],
+  "background" : {
+    "page" : "background.html"
+  },
+  "browser_action": {
+      "default_title": "Natasha",
+      "default_icon": {
+        "32": "static/996icu_32.png",
+        "64": "static/996icu_64.png"
+      },
+      "default_popup": "index.html"
+  },
+  "icons": {
+    "16":  "static/996icu_16.png",
+    "48":  "static/996icu_48.png",
+    "128": "static/996icu_128.png"
+  },
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "manifest_version": 2
+}
