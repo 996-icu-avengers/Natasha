@@ -12,13 +12,12 @@ const app = dva();
 app.model(require('./models/background').default);
 
 // 4. Router
-app.router(require('./routes').default);
+// app.router(require('./routes').default);
 
 // 5. Start
-app.start('#root');
+// app.start('#root');
 
 wrapStore(app._store, {
   portName: 'natasha',
 });
 
-console.log(app._store)
