@@ -15,7 +15,7 @@ function IndexPage() {
     <div className={styles.popup}>
       <List
         header={<div>
-          <Icon component={props => (<img style={{ width: 24, weight: 24 }} src={icu996} />)} style={{ marginLeft: -8, marginRight: 10 }} />
+          <Icon component={props => (<img alt="996icu" style={{ width: 24, weight: 24 }} src={icu996} />)} style={{ marginLeft: -8, marginRight: 10 }} />
           显示标签
           <Switch style={{ float: 'right' }} checkedChildren="显示" unCheckedChildren="关闭" defaultChecked />
         </div>}
