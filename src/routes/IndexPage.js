@@ -5,7 +5,7 @@ import styles from './IndexPage.css';
 import icu996 from '../assets/996icu/996icu.png';
 
 
-function IndexPage() {
+function IndexPage({ background={}, dispatch }) {
   const data = [
     {name: 'Natasha', link: 'https://github.com/996-icu-avengers/Natasha'},
     {name: '955.WLB', link: 'https://github.com/formulahendry/955.WLB'},
@@ -17,7 +17,17 @@ function IndexPage() {
         header={<div>
           <Icon component={props => (<img alt="996icu" style={{ width: 24, weight: 24 }} src={icu996} />)} style={{ marginLeft: -8, marginRight: 10 }} />
           显示标签
-          <Switch style={{ float: 'right' }} checkedChildren="显示" unCheckedChildren="关闭" defaultChecked />
+          <Switch
+            style={{ float: 'right' }}
+            checked={background.show}
+            checkedChildren="显示"
+            unCheckedChildren="关闭"
+            defaultChecked
+            onChange={e => {
+              console.log('onChange', e)
+              dispatch({ type: 'common/chaneShowStatus', show: e })
+            }}
+          />
         </div>}
         bordered
         dataSource={data}
@@ -30,4 +40,6 @@ function IndexPage() {
 IndexPage.propTypes = {
 };
 
-export default connect()(IndexPage);
+export default connect(({common}) => {
+  return common
+})(IndexPage);
