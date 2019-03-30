@@ -25,7 +25,7 @@ export default class CompanyTag extends Component {
   render() {
     const { name, tag } = this.state;
     const { background = {} } = store.getState();
-    const styles = `.icu996 { color: red } .wlb955 { color: green }`
+    const styles = `.icu996 { color: red; border: 1px solid red; border-radius: 3px; margin: 0 3px 0 3px; } .wlb955 { color: green; border: 1px solid green; border-radius: 3px; margin: 0 3px 0 3px; }`
     return background.show && tag ? (
       <ShadowDOM>
         <span>
