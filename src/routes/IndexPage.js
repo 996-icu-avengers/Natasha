@@ -10,6 +10,9 @@ function IndexPage({ background={}, dispatch }) {
     {name: 'Natasha', link: 'https://github.com/996-icu-avengers/Natasha'},
     {name: '955.WLB', link: 'https://github.com/formulahendry/955.WLB'},
     {name: '996.ICU', link: 'https://github.com/996icu/996.ICU'},
+    {name: '996.LAW', link: 'https://github.com/Y1ran/996.Law'},
+    {name: '996.TSC', link: 'https://github.com/lxlxw/996.TSC'},
+    {name: '996.LIST', link: 'https://github.com/fengT-T/996_list'},
   ]
   return (
     <div className={styles.popup}>
