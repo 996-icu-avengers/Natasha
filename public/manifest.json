@@ -1,6 +1,6 @@
 {
   "name": "Natasha",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "旨在各大招聘网站标记996.ICU和955.WLB上榜公司",
   "permissions":[
     "browsingData",
@@ -23,7 +23,7 @@
     {
       "matches": ["https://*.zhaopin.com/*"],
       "css": ["vendor.css"],
-      "js": ["vendor.js", "zhilian.js"]
+      "js": ["vendor.js", "zhaopin.com.js"]
     }
   ],
   "browser_action": {

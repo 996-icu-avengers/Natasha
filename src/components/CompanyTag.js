@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ShadowDOM from 'react-shadow';
 import { findDOMNode  } from 'react-dom';
-import { store, action } from '../utils/store';
+import { action } from '../utils/store';
 
 export default class CompanyTag extends Component {
   state = {
@@ -24,9 +24,9 @@ export default class CompanyTag extends Component {
   }
   render() {
     const { name, tag } = this.state;
-    const { background = {} } = store.getState();
+    const { show=true } = this.props;
     const styles = `.icu996 { color: red; border: 1px solid red; border-radius: 3px; margin: 0 3px 0 3px; } .wlb955 { color: green; border: 1px solid green; border-radius: 3px; margin: 0 3px 0 3px; }`
-    return background.show && tag ? (
+    return show && tag ? (
       <ShadowDOM>
         <span>
           <span>{name}</span>
