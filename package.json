@@ -15,7 +15,8 @@
     "history": "^4.7.2",
     "react": "^16.2.0",
     "react-chrome-redux": "^2.0.0-alpha.5",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-shadow": "^16.3.2"
   },
   "devDependencies": {
     "babel-plugin-dva-hmr": "^0.3.2",

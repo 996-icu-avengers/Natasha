@@ -19,6 +19,13 @@
   "background" : {
     "page" : "background.html"
   },
+  "content_scripts": [
+    {
+      "matches": ["https://*.zhaopin.com/*"],
+      "css": ["vendor.css"],
+      "js": ["vendor.js", "zhilian.js"]
+    }
+  ],
   "browser_action": {
       "default_title": "Natasha",
       "default_icon": {
