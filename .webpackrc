@@ -7,8 +7,8 @@
   "commons": [{"name": "vendor"}],
   "copy": [
     {
-      "from": "src/assets/996icu/*.png",
-      "to": "dist/static/"
+      "from": "src/assets/996icu",
+      "to": "static"
     }
   ],
   "ignoreMomentLocale": true
