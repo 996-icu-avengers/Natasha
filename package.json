@@ -2,8 +2,8 @@
   "private": true,
   "scripts": {
     "start": "roadhog server",
-    "build": "roadhog build && cp -r src/assets/996icu/* dist/static",
-    "watch": "roadhog build --debug --watch & sleep 60 && cp -r src/assets/996icu/* dist/static",
+    "build": "roadhog build",
+    "watch": "roadhog build --debug --watch",
     "analyze": "ANALYZE=1 roadhog build",
     "lint": "eslint --ext .js src test",
     "zip": "zip -r natasha.zip dist",

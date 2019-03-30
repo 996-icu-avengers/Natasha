@@ -5,5 +5,11 @@
     ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }]
   ],
   "commons": [{"name": "vendor"}],
+  "copy": [
+    {
+      "from": "src/assets/996icu/*.png",
+      "to": "dist/static/"
+    }
+  ],
   "ignoreMomentLocale": true
 }
