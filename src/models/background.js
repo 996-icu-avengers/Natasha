@@ -41,7 +41,7 @@ export default {
     },
     *getTagByCompanyName({ name, actionId }, { call, put, select }) {  // eslint-disable-line
       const { icu996=[], wlb955=[] } = yield select(s => s.background)
-      const tag = icu996.indexOf(name) !== -1 ? 'icu996' : wlb955.indexOf(name) !== -1 ? 'wlb955' : ''
+      const tag = icu996.indexOf(name) !== -1 ? '996ICU' : wlb955.indexOf(name) !== -1 ? '995WLB' : ''
 
       yield put({
         type: 'save',
