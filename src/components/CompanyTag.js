@@ -30,7 +30,7 @@ export default class CompanyTag extends Component {
       <ShadowDOM>
         <span>
           <span>{name}</span>
-          <span className={tag}>{tag}</span>
+          <span className={tag}>{tag === 'icu996' ? '996ICU' : '955WLB'}</span>
           <style type="text/css">{styles}</style>
         </span>
       </ShadowDOM>
