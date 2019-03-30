@@ -31,7 +31,7 @@ export default class CompanyTag extends Component {
     const innerHTML = node.innerHTML;
     this.setState({ innerHTML})
     const name = node.getAttribute('title');
-    console.log('name', name, innerHTML, node)
+    //console.log('name', name, innerHTML, node)
     if (name) {
       const mode = 'open';
       const delegatesFocus = false;
