@@ -13,6 +13,29 @@ export default {
   subscriptions: {
     setup({ dispatch, history }) {  // eslint-disable-line
       dispatch({ type: 'init' })
+      chrome.webRequest.onCompleted.addListener((details) => { // eslint-disable-line
+        const { type, statusCode, requestId, url } = details;
+        console.log('requestId', requestId, url)
+        dispatch({
+          type: 'background/save',
+          payload: {
+            latestRequest: {
+              type,
+              statusCode,
+              requestId,
+              url 
+            }
+          }
+        //}).then(res => {
+        //  console.log('res after dispatch', res)
+        })
+      }, {
+        urls: [
+          "https://*.zhaopin.com/*", 
+        ],
+      },
+      ["responseHeaders"]
+      );
     },
   },
 
@@ -42,7 +65,7 @@ export default {
     *getTagByCompanyName({ name, actionId }, { call, put, select }) {  // eslint-disable-line
       const { icu996=[], wlb955=[] } = yield select(s => s.background)
       const tag = icu996.indexOf(name) !== -1 ? 'icu996' : wlb955.indexOf(name) !== -1 ? 'wlb955' : ''
-
+      console.debug('getTagByCompanyName', name, actionId)
       yield put({
         type: 'save',
         payload: {

@@ -26,15 +26,15 @@ export default class CompanyTag extends Component {
     const { name, tag } = this.state;
     const { show=true } = this.props;
     const styles = `.icu996 { color: red; border: 1px solid red; border-radius: 3px; margin: 0 3px 0 3px; } .wlb955 { color: green; border: 1px solid green; border-radius: 3px; margin: 0 3px 0 3px; }`
-    return show && tag ? (
+    return (
       <ShadowDOM>
         <span>
           <span>{name}</span>
-          <span className={tag}>{tag === 'icu996' ? '996ICU' : '955WLB'}</span>
+          {show && tag ? <span className={tag}>{tag === 'icu996' ? '996ICU' : '955WLB'}</span> : null }
           <style type="text/css">{styles}</style>
         </span>
       </ShadowDOM>
-    ) : name
+    )
   } 
 }
 
