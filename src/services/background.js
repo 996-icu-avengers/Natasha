@@ -19,7 +19,7 @@ export function getAllCompany () {
           '京东', // https://i.loli.net/2019/04/02/5ca2e8727f213.jpg  http://tech.163.com/19/0312/13/EA2QGIOK00097U7R.html
           '58同城', // http://finance.cnr.cn/gs/20160901/t20160901_523105136.shtml
           '苏宁', // https://www.zhihu.com/question/314152843/answer/613149536
-          '途家网', // https://www.tujia.xyz/
+          '途家网', '途家网网络技术（北京）有限公司', // https://www.tujia.xyz/
           '有赞', // http://www.linkshop.com.cn/web/archives/2019/418163.shtml
           '字节跳动', // https://www.kanzhun.com/gsr5622411tl56.html  https://www.sohu.com/a/256795805_231667
           '拼多多', // http://www.taobao92.com/thread-1313-1-1.html

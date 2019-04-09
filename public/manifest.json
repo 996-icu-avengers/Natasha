@@ -21,6 +21,11 @@
       "matches": ["https://*.zhaopin.com/*"],
       "css": ["vendor.css"],
       "js": ["vendor.js", "zhaopin.com.js"]
+    },
+    {
+      "matches": ["https://*.51job.com/*"],
+      "css": ["vendor.css"],
+      "js": ["vendor.js", "job51.com.js"]
     }
   ],
   "browser_action": {
