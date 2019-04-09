@@ -16,7 +16,8 @@
 旨在各大招聘网站标记996.ICU和955.WLB上榜公司
 
 ## 安装
-```
-https://chrome.google.com/webstore/detail/natasha/icnhghjkdcenmhomcfikdfpkmekhhlej
-```
+chrome webstore: 
+[https://chrome.google.com/webstore/detail/natasha/icnhghjkdcenmhomcfikdfpkmekhhlej](https://chrome.google.com/webstore/detail/natasha/icnhghjkdcenmhomcfikdfpkmekhhlej)
+
+
 
