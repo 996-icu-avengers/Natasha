@@ -1,6 +1,6 @@
 {
   "name": "Natasha",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "旨在各大招聘网站标记996.ICU和955.WLB上榜公司",
   "permissions":[
     "browsingData",

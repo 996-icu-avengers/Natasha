@@ -34,7 +34,7 @@ function IndexPage({ background={}, dispatch }) {
         </div>}
         bordered
         dataSource={data}
-        renderItem={item => (<List.Item><Icon type="github" /><a style={{ marginLeft: 10 }} href={item.link}>{item.name}</a></List.Item>)}
+        renderItem={item => (<List.Item><Icon type="github" /><a style={{ marginLeft: 10 }} target="_blank" href={item.link}>{item.name}</a></List.Item>)}
       />
     </div>
   );
