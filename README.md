@@ -8,6 +8,6 @@
 ![image](https://user-images.githubusercontent.com/1826685/55205774-26c5e000-520f-11e9-9d28-438ce352f560.png)
 
 
-
 # 功能
+[![HitCount](http://hits.dwyl.io/996-icu-avengers/Natasha.svg)](http://hits.dwyl.io/996-icu-avengers/Natasha)
 旨在各大招聘网站标记996.ICU和955.WLB上榜公司
