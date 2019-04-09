@@ -11,3 +11,9 @@
 # 功能
 [![HitCount](http://hits.dwyl.io/996-icu-avengers/Natasha.svg)](http://hits.dwyl.io/996-icu-avengers/Natasha)
 旨在各大招聘网站标记996.ICU和955.WLB上榜公司
+
+## 安装
+```
+https://chrome.google.com/webstore/detail/natasha/icnhghjkdcenmhomcfikdfpkmekhhlej
+```
+
