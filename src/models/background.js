@@ -63,6 +63,7 @@ export default {
       });
     },
     *getTagByCompanyName({ name, actionId }, { call, put, select }) {  // eslint-disable-line
+      name = name.replace('（', '(').replace('）', ')')
       const { icu996=[], wlb955=[] } = yield select(s => s.background)
       const tag = icu996.indexOf(name) !== -1 ? 'icu996' : wlb955.indexOf(name) !== -1 ? 'wlb955' : ''
       console.debug('getTagByCompanyName', name, actionId)

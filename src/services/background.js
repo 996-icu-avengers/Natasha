@@ -19,7 +19,7 @@ export function getAllCompany () {
           '京东', // https://i.loli.net/2019/04/02/5ca2e8727f213.jpg  http://tech.163.com/19/0312/13/EA2QGIOK00097U7R.html
           '58同城', // http://finance.cnr.cn/gs/20160901/t20160901_523105136.shtml
           '苏宁', // https://www.zhihu.com/question/314152843/answer/613149536
-          '途家网', '途家网网络技术（北京）有限公司', // https://www.tujia.xyz/
+          '途家网', '途家网网络技术(北京)有限公司', // https://www.tujia.xyz/
           '有赞', // http://www.linkshop.com.cn/web/archives/2019/418163.shtml
           '字节跳动', // https://www.kanzhun.com/gsr5622411tl56.html  https://www.sohu.com/a/256795805_231667
           '拼多多', // http://www.taobao92.com/thread-1313-1-1.html
@@ -50,7 +50,7 @@ export function getAllCompany () {
           '北京关键科技股份有限公司', // https://github.com/996icu/996.ICU/blob/master/blacklist/img/keware1.png  https://github.com/996icu/996.ICU/blob/master/blacklist/img/keyware2.png
           '山东国子软件股份有限公司', // https://github.com/996icu/996.ICU/blob/master/blacklist/img/googosoft.png  https://github.com/996icu/996.ICU/blob/master/blacklist/img/googosoft2.png  https://www.kanzhun.com/pl6406106.html  https://www.kanzhun.com/gsr5619934tl56.html?ka=review-label4 
           '上海联影医疗科技有限公司', // https://www.kanzhun.com/pl6045694.html  https://bbs.csdn.net/topics/380214818  https://www.kanzhun.com/pl6212987.html
-          '首约科技（北京）有限公司', // 
+          '首约科技(北京)有限公司', // 
           '海尔集团', // https://www.zhihu.com/question/21895528
           'Boss直聘', '北京华品博睿网络技术有限公司', // https://upload.cc/i1/2019/04/03/1wfI7o.png
           '北京游奕互动软件有限公司', // https://github.com/996icu/996.ICU/blob/master/blacklist/img/yyhd.png
@@ -98,7 +98,7 @@ export function getAllCompany () {
           '作业帮', // https://www.kanzhun.com/pl6288762.html
           '天津天地伟业科技有限公司', // https://www.kanzhun.com/gsr1634154tl56.html?ka=review-label11
           '上海壹米滴答供应链管理有限公司', // https://github.com/996icu/996.ICU/blob/master/blacklist/img/yimidida.jpeg
-          '广州创思信息技术有限公司（9377 游戏）', '广州创思信息技术有限公司', '9377游戏', // https://www.zhihu.com/question/53318899
+          '广州创思信息技术有限公司(9377 游戏)', '广州创思信息技术有限公司', '9377游戏', // https://www.zhihu.com/question/53318899
           '金杜律师事务所', // https://www.kanzhun.com/gsr14366.html
           '数美科技', // https://www.zhihu.com/question/290696102
           '快方送药', // https://www.kanzhun.com/pl5675303.html

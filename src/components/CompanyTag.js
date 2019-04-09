@@ -13,7 +13,7 @@ export default class CompanyTag extends Component {
     const { show=true } = this.props;
     const styles = `.icu996 { height: 1rem; line-height: 1rem; color: red; border: 1px solid red; border-radius: 3px; margin: 0 3px 0 3px; } .wlb955 { height: 1rem; line-height: 1rem; color: green; border: 1px solid green; border-radius: 3px; margin: 0 3px 0 3px; } .name {display: inline-block; display: inline-block; overflow: hidden; max-width: calc(100% - 78px); text-overflow: ellipsis; white-space: nowrap;} .root {display: flex; align-items: center;}`
     return (<span className="root">
-      <span className="name">{name}</span>
+      <span className={show && tag ? "name" : "" }>{name}</span>
       {show && tag ? <span className={tag}>{tag === 'icu996' ? '996ICU' : '955WLB'}</span> : null }
       <style type="text/css">{styles}</style>
     </span>)
@@ -39,7 +39,7 @@ export default class CompanyTag extends Component {
       render(this.wrapContainer(), root)
       this.setState({ root, name })
       action({ type: 'background/getTagByCompanyName', name}).then(({ err, res, req }) => {
-        //console.log('getTagByCompanyName', err, res, req)
+        console.log('getTagByCompanyName', err, res, req)
         if (!err) {
           const { tag } = res;
           this.setState({ tag })
