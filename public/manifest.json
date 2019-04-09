@@ -23,6 +23,16 @@
       "js": ["vendor.js", "zhaopin.com.js"]
     },
     {
+      "matches": ["https://*.liepin.com/*"],
+      "css": ["vendor.css"],
+      "js": ["vendor.js", "liepin.com.js"]
+    },
+    {
+      "matches": ["https://*.lagou.com/*"],
+      "css": ["vendor.css"],
+      "js": ["vendor.js", "lagou.com.js"]
+    },
+    {
       "matches": ["https://*.51job.com/*"],
       "css": ["vendor.css"],
       "js": ["vendor.js", "job51.com.js"]

@@ -11,7 +11,34 @@ export default class CompanyTag extends Component {
   wrapContainer() {
     const { name, tag } = this.state;
     const { show=true } = this.props;
-    const styles = `.icu996 { height: 1rem; line-height: 1rem; color: red; border: 1px solid red; border-radius: 3px; margin: 0 3px 0 3px; } .wlb955 { height: 1rem; line-height: 1rem; color: green; border: 1px solid green; border-radius: 3px; margin: 0 3px 0 3px; } .name {display: inline-block; display: inline-block; overflow: hidden; max-width: calc(100% - 78px); text-overflow: ellipsis; white-space: nowrap;} .root {display: flex; align-items: center;}`
+    const styles = `
+      .icu996 {
+        height: 0.93rem;
+        line-height: 0.93rem;
+        color: red;
+        border: 1px solid red;
+        border-radius: 3px;
+        margin: 0 3px 0 3px;
+      }
+      .wlb955 {
+        height: 0.93rem;
+        line-height: 0.93rem;
+        color: green;
+        border: 1px solid green;
+        border-radius: 3px;
+        margin: 0 3px 0 3px;
+      }
+      .name {
+        display: inline-block;
+        overflow: hidden;
+        max-width: calc(100% - 78px);
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .root {
+        display: flex;
+        align-items: center;
+      }`
     return (<span className="root">
       <span className={show && tag ? "name" : "" }>{name}</span>
       {show && tag ? <span className={tag}>{tag === 'icu996' ? '996ICU' : '955WLB'}</span> : null }
@@ -30,7 +57,8 @@ export default class CompanyTag extends Component {
     const node = findDOMNode(this).parentNode;
     const innerHTML = node.innerHTML;
     this.setState({ innerHTML})
-    const name = node.getAttribute('title');
+    const name = node.getAttribute('title').replace(/^公司/, '');
+    // 猎聘title多了前缀“公司”
     //console.log('name', name, innerHTML, node)
     if (name) {
       const mode = 'open';
