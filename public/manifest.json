@@ -1,6 +1,6 @@
 {
   "name": "Natasha",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "旨在各大招聘网站标记996.ICU和955.WLB上榜公司",
   "permissions":[
     "browsingData",
@@ -31,6 +31,11 @@
       "matches": ["https://*.lagou.com/*"],
       "css": ["vendor.css"],
       "js": ["vendor.js", "lagou.com.js"]
+    },
+    {
+      "matches": ["https://*.zhipin.com/*"],
+      "css": ["vendor.css"],
+      "js": ["vendor.js", "zhipin.com.js"]
     },
     {
       "matches": ["https://*.51job.com/*"],
