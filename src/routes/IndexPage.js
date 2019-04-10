@@ -13,6 +13,7 @@ function IndexPage({ background={}, dispatch }) {
     {name: '996.LAW', link: 'https://github.com/Y1ran/996.Law'},
     {name: '996.TSC', link: 'https://github.com/lxlxw/996.TSC'},
     {name: '996.LIST', link: 'https://github.com/fengT-T/996_list'},
+    {name: '996.RIP', link: 'https://996.rip/', icon: 'link'},
   ]
   return (
     <div className={styles.popup}>
@@ -34,7 +35,7 @@ function IndexPage({ background={}, dispatch }) {
         </div>}
         bordered
         dataSource={data}
-        renderItem={item => (<List.Item><Icon type="github" /><a style={{ marginLeft: 10 }} target="_blank" href={item.link}>{item.name}</a></List.Item>)}
+        renderItem={item => (<List.Item><Icon type={item.icon || "github"} /><a style={{ marginLeft: 10 }} target="_blank" href={item.link}>{item.name}</a></List.Item>)}
       />
     </div>
   );
