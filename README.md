@@ -19,5 +19,9 @@
 chrome webstore: 
 [https://chrome.google.com/webstore/detail/natasha/icnhghjkdcenmhomcfikdfpkmekhhlej](https://chrome.google.com/webstore/detail/natasha/icnhghjkdcenmhomcfikdfpkmekhhlej)
 
+## crx 安装
+1. [releases](https://github.com/996-icu-avengers/Natasha/releases)页面提供已经发布的crx文件下载
+2. chrome 73版本后不再支持使用crx安装，所以还是建议直接访问上面的chrome webstore直接安装。
+
 
 
