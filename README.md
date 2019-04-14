@@ -9,6 +9,7 @@
 
 
 # 功能
+![Chrome Web Store](https://img.shields.io/chrome-web-store/v/icnhghjkdcenmhomcfikdfpkmekhhlej.svg)
 ![Chrome Web Store](https://img.shields.io/chrome-web-store/stars/icnhghjkdcenmhomcfikdfpkmekhhlej.svg)
 ![Chrome Web Store](https://img.shields.io/chrome-web-store/rating-count/icnhghjkdcenmhomcfikdfpkmekhhlej.svg)
 ![Chrome Web Store](https://img.shields.io/chrome-web-store/users/icnhghjkdcenmhomcfikdfpkmekhhlej.svg)
