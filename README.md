@@ -9,6 +9,9 @@
 
 
 # 功能
+![Chrome Web Store](https://img.shields.io/chrome-web-store/stars/icnhghjkdcenmhomcfikdfpkmekhhlej.svg)
+![Chrome Web Store](https://img.shields.io/chrome-web-store/rating-count/icnhghjkdcenmhomcfikdfpkmekhhlej.svg)
+![Chrome Web Store](https://img.shields.io/chrome-web-store/users/icnhghjkdcenmhomcfikdfpkmekhhlej.svg)
 [![HitCount](http://hits.dwyl.io/996-icu-avengers/Natasha.svg)](http://hits.dwyl.io/996-icu-avengers/Natasha)
 [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 [![Badge](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu/#/zh_CN)  
