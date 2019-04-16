@@ -19,8 +19,8 @@ export default {
       console.debug('init')
       //yield put({ type: 'getTagByCompanyName', name: '58' })
     },
-    *chaneShowStatus({ show=true }, { call, put }) {  // eslint-disable-line
-      const {err, status, res, req} = yield call(action, { type: 'background/chaneShowStatus', show })
+    *changeShowStatus({ show=true }, { call, put }) {  // eslint-disable-line
+      const {err, status, res, req} = yield call(action, { type: 'background/changeShowStatus', show })
       console.debug(err, status, res, req)
     },
     *getTagByCompanyName({ name }, { call, put }) {  // eslint-disable-line

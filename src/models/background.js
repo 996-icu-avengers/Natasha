@@ -1,4 +1,4 @@
-import { getAllCompany } from '../services/background'
+import { getAllCompany, getShowStatus, setShowStatus } from '../services/background'
 
 export default {
 
@@ -36,6 +36,10 @@ export default {
       },
       ["responseHeaders"]
       );
+      getShowStatus().then(show => {
+        console.log(show)
+        dispatch({ type: 'save', payload: { show } })
+      })
     },
   },
 
@@ -50,17 +54,20 @@ export default {
         yield put({ type: 'save', payload: {icu996, wlb955} })
       }
     },
-    *chaneShowStatus({ show, actionId }, { call, put }) {  // eslint-disable-line
-      yield put({
-        type: 'save',
-        payload: {
-          response: {
-            type: 'chaneShowStatus',
-            actionId,
-          },
-          show,
-        }
-      });
+    *changeShowStatus({ show, actionId }, { call, put }) {  // eslint-disable-line
+      const { err } = yield call(setShowStatus, show)
+      if (!err) {
+        yield put({
+          type: 'save',
+          payload: {
+            response: {
+              type: 'changeShowStatus',
+              actionId,
+            },
+            show,
+          }
+        });
+      }
     },
     *getTagByCompanyName({ name, actionId }, { call, put, select }) {  // eslint-disable-line
       name = name.replace('（', '(').replace('）', ')')

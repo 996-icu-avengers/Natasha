@@ -139,3 +139,20 @@ export function getAllCompany () {
   })
 }
 
+export function setShowStatus(status) {
+  return new Promise((resolve, reject) => {
+    chrome.storage.sync.set({'showStatus': status}, function() { // eslint-disable-line
+      resolve({ code: 0 });
+    });
+  })
+}
+
+export function getShowStatus() {
+  return new Promise((resolve, reject) => {
+    chrome.storage.sync.get('showStatus', function(result) { // eslint-disable-line
+      const { showStatus=true } = result;
+      resolve(showStatus);
+    });
+  })
+}
+
