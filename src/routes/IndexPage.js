@@ -29,7 +29,7 @@ function IndexPage({ background={}, dispatch }) {
             defaultChecked
             onChange={e => {
               console.log('onChange', e)
-              dispatch({ type: 'common/chaneShowStatus', show: e })
+              dispatch({ type: 'common/changeShowStatus', show: e })
             }}
           />
         </div>}
