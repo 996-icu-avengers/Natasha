@@ -12,21 +12,20 @@ export default class CompanyTag extends Component {
     const { name, tag } = this.state;
     const { show=true } = this.props;
     const styles = `
-      .icu996 {
+      .tag {
         height: 0.93rem;
         line-height: 0.93rem;
+        border-radius: 3px;
+        margin: 0 3px 0 3px;
+        text-transform: uppercase;
+      }
+      .icu996 {
         color: red;
         border: 1px solid red;
-        border-radius: 3px;
-        margin: 0 3px 0 3px;
       }
       .wlb955 {
-        height: 0.93rem;
-        line-height: 0.93rem;
         color: green;
         border: 1px solid green;
-        border-radius: 3px;
-        margin: 0 3px 0 3px;
       }
       .name {
         display: inline-block;
@@ -41,7 +40,7 @@ export default class CompanyTag extends Component {
       }`
     return (<span className="root">
       <span className={show && tag ? "name" : "" }>{name}</span>
-      {show && tag ? <span className={tag}>{tag === 'icu996' ? '996ICU' : '955WLB'}</span> : null }
+      {show && tag ? <span className={'tag ' + tag}>{tag}</span> : null }
       <style type="text/css">{styles}</style>
     </span>)
   }
@@ -77,7 +76,6 @@ export default class CompanyTag extends Component {
   }
   render() {
     return <span>{this.state.name}</span>
-    //return <span dangerouslySetInnerHTML={{__html: this.state.innerHTML}} />
   } 
 }
 
