@@ -14,6 +14,7 @@ function IndexPage({ background={}, dispatch }) {
     {name: '996.TSC', link: 'https://github.com/lxlxw/996.TSC'},
     {name: '996.LIST', link: 'https://github.com/fengT-T/996_list'},
     {name: '996.RIP', link: 'https://996.rip/', icon: 'link'},
+    {name: '996.OD', link: 'https://github.com/gnoloehz/996.OD'},
   ]
   return (
     <div className={styles.popup}>
