@@ -1,6 +1,9 @@
 body {
     width: 300px;
 }
+::-webkit-scrollbar {
+  width: 0px;
+}
 .popup {
   font-family: Georgia, sans-serif;
 }
