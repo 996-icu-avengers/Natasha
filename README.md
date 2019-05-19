@@ -16,6 +16,7 @@
 [![HitCount](http://hits.dwyl.io/996-icu-avengers/Natasha.svg)](http://hits.dwyl.io/996-icu-avengers/Natasha)
 [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 [![Badge](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu/#/zh_CN)  
+[![top.996](https://img.shields.io/badge/link-top.996-red.svg)](https://github.com/top996/top.996)
 
 旨在各大招聘网站标记996.ICU和955.WLB上榜公司
 
